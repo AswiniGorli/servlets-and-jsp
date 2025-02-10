@@ -34,7 +34,7 @@ public class RegistrationServlet extends HttpServlet{
 			int i=pmst.executeUpdate();
 			if(i>0)
 			{
-				resp.sendRedirect("welcome.jsp");
+				resp.sendRedirect("getall.jsp");
 			}
 			else {
 				resp.sendRedirect("login.jsp");

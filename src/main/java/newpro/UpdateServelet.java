@@ -35,7 +35,7 @@ public class UpdateServelet extends HttpServlet{
 				resp.sendRedirect("welcome.jsp");
 			}
 			else {
-				resp.sendRedirect("delete.jsp");
+				resp.sendRedirect("update.jsp");
 			}
 			
 			pmst.close();

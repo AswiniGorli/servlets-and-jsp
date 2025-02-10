@@ -8,13 +8,29 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+div
+{
+margin:10% 30%;
+border:2px solid black;
+width:25%;
+height:35%;
+padding:2% 3%;
+}
+h1
+{
+align-text:center;
+padding-bottom: 5%
+}
+</style>
+
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
 <body>
 
-	
-	
+	<div>
+	<h1>Your Details</h1>
 	<% 
 	String email="anjali@gmail.com";
 try{
@@ -29,14 +45,14 @@ try{
 	{
 	
 	%>
-			
-					<%=rs.getInt("id") %>
-				
-					<%=rs.getString("name") %>
-				
-					<%=rs.getString("email") %>
-				
-					<%=rs.getString("password") %>
+			<b>
+					Id :<%=rs.getInt("id") %>
+				<br>
+					Name :<%=rs.getString("name") %>
+				<br>
+					Email :<%=rs.getString("email") %>
+				<br>
+					Password :<%=rs.getString("password") %></b>
 				
 	<% 
 	}
@@ -47,7 +63,7 @@ try{
 	}
 	%>
 		
-
+</div>
 
 </body>
 </html>

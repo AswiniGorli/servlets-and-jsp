@@ -12,7 +12,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-@WebServlet("/getbyemail")
+@WebServlet("/getbyemails")
 public class getbyemail  extends HttpServlet{
 @Override
 protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -28,10 +28,11 @@ protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws Se
 		
 	while(rs.next())
 	{
-		pw.println("id:"+rs.getInt("id"));
-		pw.println("name:"+rs.getString("name"));
-		pw.println("email:"+rs.getString("email"));
-		pw.println("password:"+rs.getString("password"));
+		pw.println("YourDetails");
+		pw.println("Id:"+rs.getInt("id"));
+		pw.println("Name:"+rs.getString("name"));
+		pw.println("Email:"+rs.getString("email"));
+		pw.println("Password:"+rs.getString("password"));
 	}
 	} 
 	catch (Exception e)
